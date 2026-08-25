@@ -1,0 +1,17 @@
+---
+import Brief from "../layouts/Brief.astro";
+import site from "../site.config";
+---
+<Brief title="Kontakt" description={`Napisz do redakcji ${site.name}.`}>
+  <section class="mx-auto max-w-xl px-5 pb-16">
+    <h1 class="font-serif text-3xl">Kontakt</h1>
+    <p class="mt-4 text-stone-600">{site.address}</p>
+    <p class="mt-1"><a class="text-teal-800 underline" href={`mailto:${site.email}`}>{site.email}</a></p>
+    <p class="mt-4 text-sm text-stone-500">Pytania o styl pisania, redakcję tekstów i materiały z bloga — tak. Prośby o „pisanie postów na LinkedIn za darmo” — nie.</p>
+    <form class="mt-8 space-y-3" action={"mailto:" + site.email} method="get" enctype="text/plain">
+      <input name="subject" required placeholder="Temat" class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2" />
+      <textarea name="body" required rows={5} placeholder="Wiadomość" class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2"></textarea>
+      <button class="rounded-lg bg-teal-800 px-5 py-2 text-sm text-white hover:bg-teal-900">Wyślij</button>
+    </form>
+  </section>
+</Brief>

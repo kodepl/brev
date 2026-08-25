@@ -1,0 +1,10 @@
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: *
+Allow: /
+Sitemap: https://www.brev.pl/sitemap-index.xml

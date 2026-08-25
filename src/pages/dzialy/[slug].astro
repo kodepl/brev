@@ -1,0 +1,31 @@
+---
+import Brief from "../../layouts/Brief.astro";
+import { getCollection } from "astro:content";
+import site, { coverFor, rubricSlug } from "../../site.config";
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const cats = [...new Set(posts.map((p) => p.data.category).filter(Boolean))] as string[];
+  return cats.map((name) => ({
+    params: { slug: rubricSlug(name) },
+    props: { name, posts: posts.filter((p) => p.data.category === name) },
+  }));
+}
+const { name, posts } = Astro.props;
+const sorted = [...posts].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const rubric = site.rubrics.find((r) => r.name === name);
+---
+<Brief title={name} description={rubric?.blurb || name} image={coverFor(name)}>
+  <main class="mx-auto max-w-3xl px-5 pb-16">
+    <p class="text-xs font-semibold uppercase tracking-wide text-teal-700"><a href="/dzialy/">Działy</a> / {name}</p>
+    <h1 class="mt-2 font-serif text-4xl">{name}</h1>
+    <p class="mt-4 text-lg text-stone-600">{rubric?.blurb}</p>
+    <ul class="mt-8 space-y-4">
+      {sorted.map((post) => (
+        <li class="border-b border-stone-100 pb-4">
+          <a href={`/blog/${post.slug}/`} class="font-serif text-lg text-stone-900 hover:text-teal-800">{post.data.title}</a>
+          <p class="mt-1 text-sm text-stone-500">{post.data.description}</p>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Brief>

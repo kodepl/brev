@@ -1,0 +1,28 @@
+---
+import Brief from "../layouts/Brief.astro";
+import site from "../site.config";
+---
+<Brief title="O nas" description={`Kim jest redakcja ${site.name}.`} image={site.aboutImage}>
+  <main class="mx-auto max-w-3xl px-5 pb-16">
+    <img src={site.aboutImage} alt="Pisanie przy biurku" class="h-52 w-full rounded-xl object-cover ring-1 ring-stone-200" />
+    <h1 class="mt-8 font-serif text-4xl">O nas</h1>
+    <p class="mt-6 text-lg leading-relaxed text-stone-700">
+      {site.name} to łódzka redakcja o zwięzłej komunikacji. Nie uczymy „personal brandingu” — pokazujemy, jak wycinać zbędne zdania z maili, raportów i prezentacji.
+    </p>
+    <p class="mt-4 leading-relaxed text-stone-600">
+      Adres redakcji: {site.address}. Teksty pisze {site.author}, {site.authorRole.toLowerCase()}. Wcześniej redagowała materiały dla firm z branży IT i usług B2B.
+    </p>
+    <ul class="mt-6 list-disc space-y-2 pl-5 text-stone-600">
+      <li>temat maila w pięciu słowach, nie w piętnastu,</li>
+      <li>notatka ze spotkania na jednej stronie A4,</li>
+      <li>feedback bez owijania w korporacyjny papier.</li>
+    </ul>
+    <div class="mt-10 flex gap-4 border-t border-stone-200 pt-6">
+      <img src={site.authorAvatar} alt={site.author} class="h-16 w-16 rounded-full object-cover ring-2 ring-stone-200" />
+      <div>
+        <p class="font-semibold">{site.author}</p>
+        <p class="text-sm text-stone-600">{site.authorBio}</p>
+      </div>
+    </div>
+  </main>
+</Brief>
