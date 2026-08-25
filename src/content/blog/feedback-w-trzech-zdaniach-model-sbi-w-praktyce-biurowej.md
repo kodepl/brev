@@ -1,20 +1,40 @@
 ---
-title: Feedback w trzech zdaniach — model SBI w praktyce biurowej
-category: Komunikacja
-author: Magdalena Krzyżanowska
-date: 2026-08-20
+title: "Feedback w trzech zdaniach — model SBI w praktyce biurowej"
+description: "Jak skutecznie udzielać feedbacku w biurze? Poznaj model SBI, który uprości komunikację."
+pubDate: "2026-08-20"
+author: "Magdalena Krzyżanowska"
+authorBio: "Redaktorka i copywriterka. Skraca maile, raporty i prezentacje."
+category: "Komunikacja"
+tags: ["feedback", "komunikacja", "model SBI"]
+readingTime: "4 min"
 ---
 
-Feedback to kluczowy element efektywnej komunikacji w miejscu pracy. Model SBI (Situation-Behavior-Impact) dostarcza strukturalnego podejścia do udzielania informacji zwrotnej, co może znacząco poprawić atmosferę w biurze oraz wydajność zespołu. W praktyce biurowej warto umieścić każdy feedback w kontekście sytuacji, zachowania oraz wpływu, aby przekaz był zrozumiały i konstruktywny.
+## Wprowadzenie do modelu SBI
 
-Przykład zastosowania modelu SBI może wyglądać następująco: „Wczoraj podczas spotkania zespołu (Sytuacja) zauważyłem, że nie dokończyłeś swojej prezentacji (Zachowanie). Sprawiło to, że niektórzy członkowie zespołu nie mieli pełnego obrazu podejmowanych decyzji (Wpływ).” Taki format pozwala na konkretną i zrozumiałą komunikację, która nie tylko wskazuje na problem, ale także wyjaśnia jego konsekwencje.
+Model SBI to skuteczna metoda udzielania feedbacku w biurze, która pozwala na jasne przekazywanie informacji zwrotnej. Skrót ten oznacza: Sytuacja, Behawior, Efekt. Dzięki tej strukturze, pracownicy mogą otrzymać konkretną i użyteczną informację, co znacznie zwiększa efektywność komunikacji w zespole. Umożliwia to również unikanie nieporozumień i emocjonalnych reakcji, które mogą pojawić się w przypadku ogólnych uwag.
 
-Udzielając feedbacku w biurze, warto dbać o to, aby był on oparty na faktach. Na przykład: „Podczas naszej ostatniej współpracy nad projektem (S) zauważyłem, że nie dostarczałeś na czas wymaganych dokumentów (Z). To opóźnienie wpłynęło na harmonogram całego zespołu, co mogło zminimalizować naszą efektywność (I).” Dzięki takiemu podejściu, osoba otrzymująca feedback może lepiej zrozumieć, jakie zachowania powinny ulec zmianie oraz dlaczego są one ważne dla całego zespołu.
+### Sytuacja
 
-Warto również pamiętać o tym, aby feedback był regularny, a nie tylko udzielany w momentach kryzysowych. Przykładowo, można powiedzieć: „Cieszę się, że w ostatnich miesiącach wykonałeś wiele zadań samodzielnie (S). Twoja inicjatywa (Z) pomogła nam zakończyć projekt przed terminem (I).” Regularne uznawanie pozytywnych zachowań w zespole może zwiększyć motywację oraz zaangażowanie pracowników.
+Pierwszym krokiem w modelu SBI jest dokładne opisanie sytuacji, w której miało miejsce dane zachowanie. Przykład: podczas cotygodniowego spotkania zespołu, kiedy omawialiśmy projekt X, zauważyłem, że niektórzy członkowie zespołu nie byli zaangażowani w dyskusję. Warto być precyzyjnym — podanie daty i miejsca sytuacji pomaga odbiorcy lepiej zrozumieć kontekst feedbacku.
 
-Używanie modelu SBI w codziennej komunikacji w biurze nie tylko pomaga w poprawie relacji między pracownikami, ale także zwiększa przejrzystość oczekiwań. W kontekście pracy zespołowej każdy członek grupy wie, na co zwrócić uwagę i jakie działania przynoszą pozytywne rezultaty, a co wymaga poprawy.
+### Behawior
 
-Kiedy wszyscy uczestnicy procesu komunikacji będą stosować model SBI, zyskują nie tylko jasność w przekazie, ale także umiejętność konstruktywnego przyjmowania krytyki. Na przykład, pracownik, który usłyszy: „Podczas ostatniego spotkania (S) Twoje pomysły były naprawdę ciekawe (Z), jednak nie wszyscy je zrozumieli (I), może zrozumieć, że warto popracować nad sposobem przedstawiania swoich myśli.
+Kolejnym krokiem jest zwrócenie uwagi na konkretne zachowanie, które chcemy omówić. W naszym przykładzie, można powiedzieć: "Zauważyłem, że Anna i Marek nie zadawali pytań, ani nie wnosili swoich uwag." Taki opis jasno określa, co dokładnie miało miejsce, unikając ogólników. Dzięki temu, osoba, której dotyczy feedback, nie czuje się atakowana, a raczej może skupić się na swoim zachowaniu.
 
-Zastosowanie modelu SBI to nie tylko sposób na udzielanie informacji zwrotnej, ale także na budowanie kultury otwartości i współpracy w biurze. Dzięki takiemu podejściu, każdy pracownik będzie czuł się ważny i doceniony, a także zyska umiejętność udzielania konstruktywnego feedbacku innym. Takie praktyki wpływają na pozytywne relacje w zespole oraz na ogólną atmosferę w miejscu pracy, co przekłada się na lepsze wyniki w realizacji projektów i celów organizacyjnych.
+### Efekt
+
+Na końcu, niezwykle ważne jest omówienie efektu danego zachowania. Na przykład: "Brak zaangażowania z Waszej strony sprawił, że zespół nie mógł skorzystać z cennych uwag, które mogłyby poprawić projekt." Taki sposób komunikacji sprawia, że odbiorca ma szansę zobaczyć, jak jego działania wpływają na szerszy kontekst. 
+
+## Zastosowanie modelu SBI
+
+Praktyczne zastosowanie modelu SBI można zaobserwować w codziennych sytuacjach biurowych. Na przykład, jeśli menedżer zauważa, że jeden z pracowników terminowo nie wykonuje swoich zadań, zamiast mówić ogólnie: "Musisz być bardziej punktualny", lepiej użyć modelu SBI: "Wczoraj, podczas przeglądu projektów, zauważyłem, że Twoje zadanie było o dwa dni opóźnione. To spowodowało, że zespół nie mógł zrealizować kolejnych etapów na czas."
+
+Inny przykład to feedback dotyczący pracy zespołowej. Można powiedzieć: "Podczas ostatniego projektu, w którym pracowaliśmy razem, zauważyłem, że rzadko dzieliłeś się swoimi pomysłami. Z tego powodu, nie wykorzystaliśmy pełnego potencjału, jaki mógłbyś wnieść do zespołu." Taki feedback nie tylko wskazuje na problem, ale również podkreśla wartość, jaką dany pracownik wnosi do grupy.
+
+## Korzyści płynące z feedbacku
+
+Model SBI to nie tylko narzędzie do udzielania negatywnego feedbacku. Może być również wykorzystywane do wyrażania uznania. Na przykład: "Podczas naszej prezentacji wczoraj, świetnie przedstawiłeś wyniki analizy. Twoja pewność siebie pozytywnie wpłynęła na całą prezentację." Przykłady takie pomagają budować pozytywne relacje w zespole i motywują do dalszej pracy.
+
+Dzięki zastosowaniu modelu SBI, komunikacja w biurze staje się bardziej konstruktywna i zrozumiała. Pracownicy, którzy otrzymują konkretne, jasne informacje zwrotne, są bardziej zmotywowani do rozwoju i poprawy swoich umiejętności. To z kolei prowadzi do lepszego funkcjonowania całego zespołu, co jest korzystne dla wszystkich.
+
+Zachęcam do stosowania modelu SBI w codziennej komunikacji w biurze, aby poprawić jakość feedbacku oraz zbudować zdrowszą kulturę pracy. Więcej na temat efektywnej komunikacji można znaleźć w artykule [odpowiedni tekst](https://pl.wikipedia.org/wiki/Komunikacja).
