@@ -2,13 +2,21 @@
 import Brief from "../../layouts/Brief.astro";
 import { getCollection } from "astro:content";
 import { coverFor } from "../../site.config";
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+  return paginate(posts, { pageSize: 9 });
+}
+
+const { page } = Astro.props;
 ---
 <Brief title="Blog" description="Artykuły o zwięzłości, komunikacji i jasnym języku.">
   <main class="mx-auto max-w-3xl px-5 pb-16">
     <h1 class="font-serif text-3xl">Blog</h1>
     <div class="mt-8 space-y-6">
-      {posts.map((post) => (
+      {page.data.map((post) => (
         <a href={`/blog/${post.slug}/`} class="flex gap-4 overflow-hidden rounded-xl border border-stone-200 bg-white p-1 hover:border-teal-300">
           <img src={coverFor(post.data.category, post.data.image)} alt="" class="h-24 w-32 shrink-0 rounded-lg object-cover" />
           <div class="py-3 pr-3">
@@ -20,4 +28,21 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
       ))}
     </div>
   </main>
+
+  {page.lastPage > 1 && (
+    <nav class="mt-12 flex flex-wrap items-center justify-center gap-3 text-sm" aria-label="Paginacja">
+      {page.url.prev ? (
+        <a href={page.url.prev} class="underline-offset-2 hover:underline">← Nowsze</a>
+      ) : (
+        <span class="opacity-40">← Nowsze</span>
+      )}
+      <span class="tabular-nums opacity-70">{page.currentPage} / {page.lastPage}</span>
+      {page.url.next ? (
+        <a href={page.url.next} class="underline-offset-2 hover:underline">Starsze →</a>
+      ) : (
+        <span class="opacity-40">Starsze →</span>
+      )}
+    </nav>
+  )}
+
 </Brief>
