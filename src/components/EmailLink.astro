@@ -1,0 +1,25 @@
+---
+const { class: className = "underline underline-offset-4" } = Astro.props;
+---
+<button type="button" class:list={["js-em", className]}>Pokaż adres e-mail</button>
+<script is:inline>
+(function () {
+  var codes = [104, 97, 115, 101, 114, 56, 56, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109];
+  function addr() {
+    return codes.map(function (n) { return String.fromCharCode(n); }).join("");
+  }
+  document.querySelectorAll("button.js-em").forEach(function (btn) {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = "1";
+    btn.addEventListener("click", function () {
+      var mail = addr();
+      var a = document.createElement("a");
+      a.href = "mai" + "lto:" + mail;
+      a.textContent = mail;
+      a.rel = "nofollow noopener";
+      a.className = btn.className;
+      btn.replaceWith(a);
+    });
+  });
+})();
+</script>
