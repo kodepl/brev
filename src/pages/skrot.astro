@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Brief.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort((a, b) => +new Date(b.data.pubDate) - +new Date(a.data.pubDate));
+const items = posts.map((post) => ({
+  title: post.data.title,
+  category: post.data.category || "",
+  href: "/blog/" + post.slug + "/",
+}));
+---
+<Layout title="Skrót archiwum" description="Jedno słowo wystarczy.">
+  <section class="mx-auto max-w-3xl px-5 py-14">
+    <p class="text-xs uppercase tracking-[0.22em] opacity-60">Archiwum</p>
+    <h1 class="mt-2 font-display text-4xl">Skrót archiwum</h1>
+    <p class="mt-3 opacity-70">Jedno słowo wystarczy.</p>
+    <input id="q-brev" class="mt-6 w-full border border-black/15 bg-white px-4 py-3 text-base text-black" type="search" placeholder="Szukaj..." autocomplete="off" />
+    <p id="n-brev" class="mt-3 text-sm opacity-60"></p>
+    <ul id="list-brev" class="mt-6 divide-y divide-black/10"></ul>
+  </section>
+</Layout>
+<script define:vars={{ items, repo: "brev" }}>
+  const input = document.getElementById("q-" + repo);
+  const list = document.getElementById("list-" + repo);
+  const note = document.getElementById("n-" + repo);
+  function draw() {
+    const q = input.value.trim().toLowerCase();
+    const found = items.filter((item) => (item.title + " " + item.category).toLowerCase().includes(q));
+    note.textContent = found.length + " tekstów";
+    list.innerHTML = found.slice(0, 40).map((item) => '<li class="py-3"><a href="' + item.href + '"><span class="block text-xs uppercase tracking-wide opacity-60">' + item.category + '</span><span class="font-display text-2xl">' + item.title + '</span></a></li>').join("");
+  }
+  input.addEventListener("input", draw);
+  draw();
+</script>
